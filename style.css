@@ -1,0 +1,101 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* #D3D3D3; */
+/* #000000 */
+/* #FFFFFF */
+/* #D50000 */
+:root {
+    --font-basic: 'Raleway', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --basic-color-white: #FFFFFF;
+    --basic-color-black: #000000;
+    --color-red: #D50000;
+    --color-grey-light:#D3D3D3;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--color-grey-light);
+}
+
+/* <header class="header"> */
+.header {
+    display: flex;
+}
+.logo {
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--basic-color-black);
+}
+
+.nav-link {
+    position: relative;
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--basic-color-black);
+
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--basic-color-black);
+    visibility: hidden;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    font-weight: 700;
+}
+    
+.nav-link:hover::after,
+.nav-link:focus::after {
+    visibility: visible;
+} 
+
+/* <main> */
+/* <section class="main-left"> */
+
+h1 {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 95px;
+    color: var(--basic-color-black);
+}
+
+.main-left-text {
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--basic-color-black);
+}
+
+.button {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--basic-color-white);
+    background-color: var(--basic-color-black);
+}
+
+
