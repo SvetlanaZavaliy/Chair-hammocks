@@ -98,4 +98,57 @@ h1 {
     background-color: var(--basic-color-black);
 }
 
+/* <div class="catalog"> */
 
+.catalog-new {
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-red);
+}
+
+.catalog-praic {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--basic-color-black);
+}
+
+.catalog-button-praic {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--basic-color-black);
+}
+
+.catalog-basket {
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--basic-color-white);
+    background-color: var(--basic-color-black);
+}
+
+/* <section class="main-right"> */
+
+
+.big-img {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.18;
+
+}
+
+/* <footer class="footer"> */
+
+.footer {
+    
+}
