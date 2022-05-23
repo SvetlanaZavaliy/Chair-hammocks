@@ -20,11 +20,15 @@ a{
 
 body {
     background-color: var(--color-grey-light);
+    margin: 40px 100px;
+    box-sizing: border-box;
+    max-width: 1920px;
 }
 
 /* <header class="header"> */
 .header {
     display: flex;
+    justify-content: space-between;
 }
 .logo {
     font-family: var(--font-basic);
@@ -43,7 +47,11 @@ body {
     font-size: 20px;
     line-height: 1.15;
     color: var(--basic-color-black);
+    margin-right: 60px;
+}
 
+.nav-link:last-child {
+    margin-right: 0;
 }
 
 .nav-link::after {
@@ -67,8 +75,15 @@ body {
     visibility: visible;
 } 
 
+.img-info-basket {
+    margin-left: 26px;
+}
 /* <main> */
 /* <section class="main-left"> */
+
+.main {
+    display: flex;
+}
 
 h1 {
     font-family: var(--font-secondary);
@@ -77,6 +92,8 @@ h1 {
     font-size: 70px;
     line-height: 95px;
     color: var(--basic-color-black);
+    margin-top: 236px;
+    margin-bottom: 40px;
 }
 
 .main-left-text {
@@ -86,6 +103,7 @@ h1 {
     font-size: 20px;
     line-height: 1.15;
     color: var(--basic-color-black);
+    margin: 0;
 }
 
 .button {
@@ -96,9 +114,31 @@ h1 {
     line-height: 1.38;
     color: var(--basic-color-white);
     background-color: var(--basic-color-black);
+    padding: 7px 36px;
+    margin-top: 40px;
+    margin-bottom: 200px;
 }
 
 /* <div class="catalog"> */
+.catalog {
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-card {
+    background: var(--basic-color-white);
+    width: 260px;
+    height: 300px;
+    position: relative;
+}
+
+.catalog-new-praic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;    
+}
 
 .catalog-new {
     font-family: var(--font-basic);
@@ -107,6 +147,8 @@ h1 {
     font-size: 22px;
     line-height: 26px;
     color: var(--color-red);
+    margin-bottom: 176px;
+    z-index: 10;
 }
 
 .catalog-praic {
@@ -116,6 +158,21 @@ h1 {
     font-size: 20px;
     line-height: 1.35;
     color: var(--basic-color-black);
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.catalog-img {
+    position: absolute;
+    top: 39px;
+    bottom: 61px;
+    left: 60px;
+}
+
+.catalog-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .catalog-button-praic {
@@ -125,6 +182,11 @@ h1 {
     font-size: 20px;
     line-height: 1.35;
     color: var(--basic-color-black);
+    padding: 0 4px;
+}
+
+.catalog-one {
+    padding: 0 20px;
 }
 
 .catalog-basket {
@@ -135,20 +197,57 @@ h1 {
     line-height: 1.14;
     color: var(--basic-color-white);
     background-color: var(--basic-color-black);
+    padding: 5px 12px;
 }
 
 /* <section class="main-right"> */
 
+/* .main-right {
+    width: 510px;
+    height: 812px; */
+/* } */
+
+.catalog-praic-big {
+
+}
+
+.card-big {
+    width: 510px;
+    height: 812px;
+    padding-left: 115px;
+    margin-top: 134px;
+}
 
 .big-img {
+    margin-bottom: 40px;
+}
+
+.button-button-big {
+    display: flex;
+    margin-top: 10px;    
+}
+
+
+
+.button-big {
+    padding: 0 18px;
+}
+
+
+
+.right-button {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.18;
-
+    padding: 4px 16px;
+    color: var(--basic-color-white);
+    background: var(--basic-color-black);
+    margin-left: 40px;
+    
 }
 
 /* <footer class="footer"> */
 
-.footer {
+/* .footer {
     
-}
+} */

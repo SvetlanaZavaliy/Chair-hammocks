@@ -22,12 +22,17 @@
         <a class="nav-link" href="">Blog</a>
         <a class="nav-link" href="">Contact</a>
       </nav>
-      <div>
+      <div class="img-info">
         <img src="./images/search-img.png" width="19px" alt="search" />
-        <img src="./images/basket-img.png" width="19px" alt="basket" />
+        <img
+          class="img-info-basket"
+          src="./images/basket-img.png"
+          width="19px"
+          alt="basket"
+        />
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="main-left">
         <div>
           <h1>Chair hammocks</h1>
@@ -35,52 +40,82 @@
           <button class="button">View catalog</button>
         </div>
         <div class="catalog">
-          <a href="">
-            <span class="catalog-new">NEW</span>
-            <span class="catalog-praic">&#36; 400</span>
+          <div class="catalog-card" width="260px">
+            <div class="catalog-new-praic">
+              <span class="catalog-new">NEW</span>
+              <span class="catalog-praic">&#36; 400</span>
+            </div>
             <img
               class="catalog-img"
               src="./images/img-1.png"
               alt="rocking chair"
               width="200"
             />
-            <button class="catalog-button-praic">&#45; 1 &#43;</button>
-            <button class="catalog-basket">Add to bag</button>
-          </a>
-          <a href="">
-            <span class="catalog-new">NEW</span>
-            <span class="catalog-praic">&#36; 400</span>
+            <div class="catalog-button">
+              <button class="catalog-button-praic">
+                &#45; <span class="catalog-one">1</span> &#43;
+              </button>
+              <button class="catalog-basket">Add to bag</button>
+            </div>
+          </div>
+          <div class="catalog-card" width="260px">
+            <div class="catalog-new-praic">
+              <span class="catalog-new">NEW</span>
+              <span class="catalog-praic">&#36; 400</span>
+            </div>
             <img
               class="catalog-img"
               src="./images/img-2.png"
               alt="rocking chair"
               width="200"
             />
-            <button class="catalog-button-praic">&#45; 1 &#43;</button>
-            <button class="catalog-basket">Add to bag</button>
-          </a>
-          <a href="">
-            <span class="catalog-new">NEW</span>
-            <span class="catalog-praic">&#36; 400</span>
+            <div class="catalog-button">
+              <button class="catalog-button-praic">
+                &#45; <span class="catalog-one">1</span> &#43;
+              </button>
+              <button class="catalog-basket">Add to bag</button>
+            </div>
+          </div>
+          <div class="catalog-card" width="260px">
+            <div class="catalog-new-praic">
+              <span class="catalog-new">NEW</span>
+              <span class="catalog-praic">&#36; 500</span>
+            </div>
             <img
               class="catalog-img"
               src="./images/img-3.png"
               alt="rocking chair"
               width="200"
             />
-            <button class="catalog-button-praic">&#45; 1 &#43;</button>
-            <button class="catalog-basket">Add to bag</button>
-          </a>
+            <div class="catalog-button">
+              <button class="catalog-button-praic">
+                &#45; <span class="catalog-one">1</span> &#43;
+              </button>
+              <button class="catalog-basket">Add to bag</button>
+            </div>
+          </div>
         </div>
       </section>
+
       <section class="main-right">
-        <img src="./images/img-main.png" alt="rocking chair" width="510" />
-        <span class="catalog-praic">&#36; 450</span>
-        <button class="catalog-button-praic">&#45; 1 &#43;</button>
-        <button class="catalog-basket big-img">Add to bag</button>
+        <div class="card-big">
+          <img
+            class="big-img"
+            src="./images/img-main.png"
+            alt="rocking chair"
+            width="510"
+          />
+          <span class="catalog-praic big-praic">&#36; 450</span>
+          <div class="button-button-big">
+            <button class="catalog-button-praic button-big">
+              &#45; <span class="catalog-one">1</span> &#43;
+            </button>
+            <button class="right-button">Add to bag</button>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <a href="" aria-label="twitter">
         <img src="./images/twitter-img.png" alt="twitter" width="24" />
       </a>
@@ -90,6 +125,6 @@
       <a href="" aria-label="facebook">
         <img src="./images/facebook-img.png" alt="facebook" width="13" />
       </a>
-    </footer>
+    </footer> -->
   </body>
 </html>
