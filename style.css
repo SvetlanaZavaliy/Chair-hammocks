@@ -1,16 +1,17 @@
 /* font-family: 'Open Sans', sans-serif; */
-/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */ 
 /* #D3D3D3; */
 /* #000000 */
 /* #FFFFFF */
 /* #D50000 */
+
 :root {
     --font-basic: 'Raleway', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
     --basic-color-white: #FFFFFF;
     --basic-color-black: #000000;
     --color-red: #D50000;
-    --color-grey-light:#D3D3D3;
+    --color-grey-light: #D3D3D3;
 }
 
 a{
@@ -23,6 +24,7 @@ body {
     margin: 40px 100px;
     box-sizing: border-box;
     max-width: 1920px;
+    position: relative;
 }
 
 /* <header class="header"> */
@@ -69,7 +71,7 @@ body {
 .nav-link:focus {
     font-weight: 700;
 }
-    
+     
 .nav-link:hover::after,
 .nav-link:focus::after {
     visibility: visible;
@@ -172,22 +174,41 @@ h1 {
 .catalog-button {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    
 }
 
 .catalog-button-praic {
-    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+}
+
+.simvol-minus,
+.simvol-plus {
+    display: block;
+    width: 20.5px;
+}
+
+
+
+.catalog-one {
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.35;
-    color: var(--basic-color-black);
-    padding: 0 4px;
+    line-height: 27px;    
+    color: #000000;
+    /* margin-left: 25px;
+    margin-right: 25px; */
 }
 
-.catalog-one {
-    padding: 0 20px;
-}
+
+ 
+
+
 
 .catalog-basket {
     font-family: var(--font-basic);
@@ -202,15 +223,14 @@ h1 {
 
 /* <section class="main-right"> */
 
-/* .main-right {
+.main-right {
     width: 510px;
-    height: 812px; */
-/* } */
-
-.catalog-praic-big {
-
+    height: 812px; 
 }
 
+/* .catalog-praic-big {
+
+} */
 .card-big {
     width: 510px;
     height: 812px;
@@ -230,7 +250,8 @@ h1 {
 
 
 .button-big {
-    padding: 0 18px;
+    /* padding: 0 18px; */
+    width: 130px;
 }
 
 
@@ -246,8 +267,19 @@ h1 {
     
 }
 
-/* <footer class="footer"> */
-
-/* .footer {
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 1855px;
+    top: 466px;
     
-} */
+}
+
+a[aria-label="instagram"] {
+    margin: 42px 0;
+}
+
+
+    
