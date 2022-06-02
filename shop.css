@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-basic-raleway: 'Raleway', sans-serif;
+    --font-secondary-sans: 'Open Sans', sans-serif;
+    --basic-color-white: #FFFFFF;
+    --basic-color-black: #000000;
+    --color-red: #D50000;
+    --color-grey-light: #D3D3D3;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(155, 125, 183);
+    max-width: 1920px;
+}
+
+ /* <header class="header"> */
+
+.header {
+    margin: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--font-basic-raleway);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--basic-color-black);
+}
+
+.nav-link {
+    font-family: var(--font-basic-raleway);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--basic-color-black);
+    position: relative;
+    margin-left: 60px;
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    visibility: hidden;
+    background-color: var(--basic-color-black);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    font-weight: 700;
+}
+
+.nav-link:hover:after,
+.nav-link:focus::after {
+    visibility: visible;
+} 
+
+.img-info-basket {
+    margin-left: 26px;
+}
+
+
+
