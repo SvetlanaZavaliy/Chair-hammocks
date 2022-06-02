@@ -21,7 +21,7 @@ a{
 
 body {
     background-color: var(--color-grey-light);
-    margin: 40px 100px;
+    margin: 40px 100px; 
     box-sizing: border-box;
     max-width: 1920px;
     position: relative;
