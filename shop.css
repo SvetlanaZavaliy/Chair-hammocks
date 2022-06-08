@@ -90,8 +90,7 @@ body {
 
 .main {
     background-color: rgb(13, 69, 97);
-    height: 976px;
-
+    height: 976px;   
     display: flex;
 }
 
@@ -101,6 +100,121 @@ body {
     width: 1210px;
     background-color: rgb(18, 237, 87);
     /* height: 976px; */
+}
+
+.left-top {
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+
+h1 {
+    font-family: var(--font-secondary-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1.36;
+    color: var(--basic-color-black);
+    margin: 0;
+}
+
+p {
+    font-family: var(--font-basic-raleway);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--basic-color-black);
+    margin: 40px 0;
+}
+
+.button {
+    font-family: var(--font-secondary-sans);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--basic-color-white);
+    background-color: var(--basic-color-black);
+    padding: 9px 38px;
+    border: none;
+}
+
+/* <div class="left-bottom"> */
+
+.left-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+/* .card {
+    background-color: var(--basic-color-white);
+} */
+
+.card {
+    background-color: rgb(214, 18, 103);
+    width: 260px;
+    position: relative;
+}
+
+.catalog-img {
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-right: 0;
+}
+
+.new-praic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    background-color: rgb(84, 78, 78);
+    position: absolute;
+    top: 20px;
+    left: 20px;       
+}
+
+.new {
+    font-family: var(--font-basic-raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--color-red);
+}
+
+.praic {
+    font-family: var(--font-secondary-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--basic-color-black);
+
+}
+
+.btn-left {
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--basic-color-black);
+}
+.simvol-minus,
+.simvol-plus {
+    color: var(--basic-color-black);
+    display: block;
+    width: 10.5px;
+    height: 10.5px;
+}
+
+.catalog-one {
+    font-family: var(--font-secondary-sans);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--basic-color-black);
 }
 
 
